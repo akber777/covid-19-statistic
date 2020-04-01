@@ -49,6 +49,28 @@ $(document).ready(function(){
 
 
 
+	function Getval(){
+
+		let tableVal=document.querySelectorAll('#mytables td');
+
+
+		for( let i=0;i < tableVal.length;i++)
+		{
+			if(tableVal[i].innerText=='undefined')
+			{
+				tableVal[i].style.display='none'
+
+
+			}
+		}
+
+	}
+
+
+	
+
+	setTimeout(Getval,2500)
+
 
 })
 
